@@ -1,0 +1,386 @@
+@import url("reset.css");
+body {
+    background-image: url("../images/TastyRecipes.jpg");
+    background-attachment: fixed;
+
+    margin: 10px;
+
+    height: 100%;
+    width: auto;
+
+    font-family: Verdana, Helvetica, sans-serif;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    padding-top: 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #19c2a4;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+h4.light {
+    color: #FFF3E6;
+}
+
+p.image {
+    font-size: 12px;
+    margin-left: 60px;
+}
+
+p.opaque {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p.source {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+p.day {
+    position: absolute;
+}
+
+div {
+    margin-top: 0;
+}
+
+
+div.day {
+    background-color: white;
+    float: left;
+    border: 2px #777 solid;
+    width: 14.2857143%;
+    height: 150px;
+    margin: auto;
+}
+
+img.day {
+    max-width: 100%;
+    max-height: 100%;display: block;
+    margin: auto;
+}
+
+div.opaque {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    width: 40%;
+    background: rgba(25, 25, 25, .75);
+    color: #fffcec;
+}
+
+div.recipe {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    width: 40%;
+    background: rgba(25, 25, 25, .75);
+    color: white;
+}
+
+div.directions {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: rgba(255, 255, 255, .75);
+    color: black;
+    width: 50%;
+}
+
+img {
+    margin-top: 40px;
+    margin-right: 30px;
+}
+
+img.recipe {
+    display: block;
+    max-width: 35%;
+    max-height: 20%;
+    width: auto;
+    height: auto;
+    border: 25px solid rgba(255, 255, 255, .75);
+    margin-top: 20px;
+}
+
+img.calendar {
+    max-width: 75px;
+    max-height: 75px;
+    width: auto;
+    height: auto;
+}
+
+
+ul.opaqueBlack {
+    margin-top: 5px;
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 1em;
+}
+
+ul.opaqueBlack li {
+    margin-top: 5px;
+    color: #fffcec;
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+ul.opaqueWhite {
+    margin-top: 5px;
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 1em;
+}
+
+ul.opaqueWhite li {
+    margin-top: 5px;
+    color: black;
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+
+* {box-sizing: border-box;}
+ul.calender {list-style-type: none;}
+
+.month {
+    margin-top: 30px;
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 20px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding-top: 50px;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 75px;
+    font-size: 12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 20px;
+    background: #1abc9c;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+
+ul.topnav {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li.topnav {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a, .dropbtn2 {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a, .dropbtnCalendar {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    max-height: 120px;
+}
+
+li a:hover, .dropdownWhite:hover .dropbtn {
+    background-color: #1abc9c;
+}
+
+li a:hover, .dropdownBlack:hover .dropbtncCalendar {
+    background-color: #1abc9c;
+}
+
+li.dropdownWhite{
+    display: inline-block;
+    float: left;
+}
+
+li.dropdownBlack{
+    display: inline-block;
+    float: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #1ba358;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: inline-block;
+}
+
+.container {
+    position: absolute;
+    right: 35%;
+    top: 25%;
+}
+
+.tip {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background: transparent;
+    border: 10px solid #543c27;
+}
+
+.tip-up {
+    top: -25px; /* Same as body margin top + border */
+    left: 10px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+.tip-down {
+    bottom: -25px;
+    left: 10px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.tip-left {
+    top: 10px;
+    left: -25px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.tip-right {
+    top: 10px;
+    right: -25px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.dialogbox .body {
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    margin: 20px 10px;
+    padding: 5px;
+    background-color: #DADADA;
+    border-radius: 3px;
+    border: 5px solid #1abc9c;
+}
+
+.body .message {
+    min-height: 30px;
+    border-radius: 3px;
+    line-height: 1.5;
+    color: #000000;
+}
